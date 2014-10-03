@@ -10,14 +10,14 @@ Two-step authentication module for simpleSAMLphp using questions and answers.
  <pre><code>
        'authqstep' => array(
         'authqstep:authqstep',
-           'db.dsn' => 'mysql:host=db.example.com;port=3306;dbname=idpauthqstep',
-           'db.username' => 'simplesaml',
-           'db.password' => 'password',
-           'db.answers_salt' => 'secretsalt',
-           'mainAuthSource' => 'ldap',
-           'minAnswerLength' => 5,
-          'uidField' => 'uid',
-           'initSecretQuestions' => array('Question 1', 'Question 2', 'Question 3')
+             'db.dsn' => 'mysql:host=db.example.com;port=3306;dbname=idpauthqstep',
+             'db.username' => 'simplesaml',
+             'db.password' => 'password',
+             'db.answers_salt' => 'secretsalt',
+             'mainAuthSource' => 'ldap',
+             'minAnswerLength' => 5,
+             'uidField' => 'uid',
+             'initSecretQuestions' => array('Question 1', 'Question 2', 'Question 3')
          ),
   </pre></code>
 
@@ -35,3 +35,13 @@ Two-step authentication module for simpleSAMLphp using questions and answers.
 
  PS: Database schema for answers and questions is automagically generated once the module is enabled.
 
+Dependencies
+------------
+* Jquery-ui
+* Jquery-keyboard
+
+Requirements
+------------
+
+* MySQL
+* PHP-MySQL PDO library support
