@@ -10,9 +10,8 @@ Two-step authentication module for simpleSAMLphp using questions and answers.
  <pre><code>
        'authqstep' => array(
         'authqstep:authqstep',
- 
            'db.dsn' => 'mysql:host=db.example.com;port=3306;dbname=idpauthqstep',
-          'db.username' => 'simplesaml',
+           'db.username' => 'simplesaml',
            'db.password' => 'password',
            'db.answers_salt' => 'secretsalt',
            'mainAuthSource' => 'ldap',
@@ -21,7 +20,7 @@ Two-step authentication module for simpleSAMLphp using questions and answers.
            'initSecretQuestions' => array('Question 1', 'Question 2', 'Question 3')
          ),
   </pre></code>
-  
+
  Once user provides their ldap credentials, if they have pre-existing answers registered in the database
  they are randomly asked one of their chosen question. The answers are provided using on-screen keyboard
  for security reasons and to avoid key logging.

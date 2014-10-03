@@ -172,9 +172,9 @@ class sspmod_authqstep_Auth_Source_authqstep extends SimpleSAML_Auth_Source {
               answer_id INT(11) NOT NULL AUTO_INCREMENT,
               PRIMARY KEY(answer_id),
               answer_hash VARCHAR(128) NOT NULL,
-        answer_salt VARCHAR(15) NOT NULL,
-                  question_id INT(11) NOT NULL,
-                  uid VARCHAR(60) NULL
+              answer_salt VARCHAR(15) NOT NULL,
+              question_id INT(11) NOT NULL,
+              uid VARCHAR(60) NULL
              );";
     $result = $this->dbh->query($q);     
   }
@@ -245,10 +245,10 @@ class sspmod_authqstep_Auth_Source_authqstep extends SimpleSAML_Auth_Source {
         
         $result = $this->dbh->query($q);
         $rows = $result->fetchAll();
-        // array_rand is quicker then SQL ORDER BY RAND()
+        // TIP array_rand is quicker then SQL ORDER BY RAND()
         $random_question = $rows[array_rand($rows)];        
         // TODO this question needs to be made persistent 
-        // so that user is challenged for same random question
+        // so that user is not challenged for same random question
         return array_unique($random_question);
     }
 
@@ -271,7 +271,7 @@ class sspmod_authqstep_Auth_Source_authqstep extends SimpleSAML_Auth_Source {
       if (empty($answers) || empty($questions) || empty($uid)) return FALSE;
         $question_answers = array_combine($answers, $questions);
 
-      // if any of the answers don't meeting requirement then go back
+      // if any of the answers don't meet the requirements then go back
       foreach($question_answers as $answer => $question){
         // Check that the answer meets the length requirements
         if ((strlen($answer) < $this->minAnswerLength) || ($question < 0)) {

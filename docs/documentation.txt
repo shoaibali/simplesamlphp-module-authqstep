@@ -4,14 +4,14 @@ Questions and answers database tables are automatically created if they don't ex
  * Configure it by adding an entry to config/authsources.php such as this:
  *
  *      'authqstep' => array(
- *       	'authqstep:authqstep',
+ *        'authqstep:authqstep',
  *
- *        	'db.dsn' => 'mysql:host=db.example.com;port=3306;dbname=idpauthqstep',
- *       	'db.username' => 'simplesaml',
- *       	'db.password' => 'password',
- *          'db.answers_salt' => 'secretsalt',
- *			'mainAuthSource' => 'ldap',
- *			'uidField' => 'uid'
+ *         'db.dsn' => 'mysql:host=db.example.com;port=3306;dbname=idpauthqstep',
+ *         'db.username' => 'simplesaml',
+ *         'db.password' => 'password',
+ *         'db.answers_salt' => 'secretsalt',
+ *         'mainAuthSource' => 'ldap',
+ *          'uidField' => 'uid'
  *        ),
 
  Once user provides their ldap credentials, if they have pre-existing answers registered in the database
@@ -21,3 +21,5 @@ Questions and answers database tables are automatically created if they don't ex
  In order to complete the login user must provide a correct answer to its question. 
 
  All answers are normalized to lowercase to accomodate future hashing capability.
+
+ NOTE: See README.md
