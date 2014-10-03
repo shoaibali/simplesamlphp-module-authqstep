@@ -1,0 +1,23 @@
+This is a 2-step verification authentication module. This requries a MySQL database to be created. 
+Questions and answers database tables are automatically created if they don't exist. 
+
+ * Configure it by adding an entry to config/authsources.php such as this:
+ *
+ *      'authqstep' => array(
+ *       	'authqstep:authqstep',
+ *
+ *        	'db.dsn' => 'mysql:host=db.example.com;port=3306;dbname=idpauthqstep',
+ *       	'db.username' => 'simplesaml',
+ *       	'db.password' => 'password',
+ *          'db.answers_salt' => 'secretsalt',
+ *			'mainAuthSource' => 'ldap',
+ *			'uidField' => 'uid'
+ *        ),
+
+ Once user provides their ldap credentials, if they have pre-existing answers registered in the database
+ they are randomly asked one of their chosen question.
+
+ If the user is new, they go through the process of chosing their questions and their respective answers.
+ In order to complete the login user must provide a correct answer to its question. 
+
+ All answers are normalized to lowercase to accomodate future hashing capability.

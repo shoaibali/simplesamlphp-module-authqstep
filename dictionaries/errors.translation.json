@@ -1,0 +1,15 @@
+{
+    "title_WRONGANSWER": {
+        "hu": "A megadott ellenőrzőkód hibás!"
+    },
+    "descr_WRONGANSWER"": {
+        "hu": "A válasz az, hogy amennyiben nem egyezik. Próbálja újra, vagy lépjen kapcsolatba az adminisztrátorok!"  
+    },
+
+    "title_EMPTYQUESTIONS": {
+		"en": "No questions found! - TODO Translation"
+	},
+	"descr_EMPTYQUESTIONS": {
+		"en": "Please populate the database with questions. - TODO Translation"
+	}
+}

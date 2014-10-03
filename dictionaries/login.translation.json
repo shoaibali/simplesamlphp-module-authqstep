@@ -1,0 +1,19 @@
+{
+
+	"next": {
+		"hu": "Tovább"
+	},
+	"2step_title": {
+		"hu": "Kétfaktoros azonosítás - beállítás"
+	},
+	"authentication": {
+		"hu": "Bejelentkezés"
+	},	
+	"verficiationanswer": {
+		"hu": "Add meg az aktuális ellenőrző kódot"
+	},
+	"2step_login": {
+		"en": "Complete login"
+	}
+
+}

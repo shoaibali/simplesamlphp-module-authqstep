@@ -1,0 +1,26 @@
+{
+	"otpfield": {
+		"en": "Verificaton code"
+	},
+	"chooseANSWERS": {
+		"en": "Please choose an answer to 3 questions."
+	},
+	"next": {
+		"en": "Next"
+	},
+	"2step_title": {
+		"en": "Set up two-step authentication"
+	},
+	"authentication": {
+		"en": "Authentication"
+	},	
+	"qrcode": {
+		"en": "Read the QR code with Google Authenticator app, and type the verification code below"
+	},
+	"verficiationanswer": {
+		"en": "Input your answer to question below"
+	},
+	"2step_login": {
+		"en": "Complete login with answer to secret question."
+	}	
+}

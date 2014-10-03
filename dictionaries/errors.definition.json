@@ -1,0 +1,38 @@
+{
+	"title_WRONGANSWER": {
+		"en": "Wrong answer!"
+	},
+	"descr_WRONGANSWER": {
+		"en": "The answer you provided did not match. Try again, or contact the administrators!"
+	},
+
+	"title_INVALIDQUESTIONANSWERS": {
+		"en": "Duplicate question or answers provided"
+	},
+	"descr_INVALIDQUESTIONANSWERS": {
+		"en": "Please check that all answer and questions are different from each other."
+	},
+
+        "title_SHORTQUESTIONANSWERS": {
+	        "en": "Answer too short"
+	},
+
+        "descr_SHORTQUESTIONANSWERS": {
+	        "en": "One or more of the answers you provided does not meet the minimum length requirements imposed by your administrator. Please revise your answers or choose other questions."
+	},
+	
+	"title_EMPTYQUESTIONS": {
+		"en": "No questions found!"
+	},
+	"descr_EMPTYQUESTIONS": {
+		"en": "Please populate the database with questions."
+	},
+
+	"title_INCOMPLETEQUESTIONS": {
+	  "en": "More answers needed"
+	},
+	
+  "descr_INCOMPLETEQUESTIONS": {
+   "en": "Please enter answers for more questions"
+	}
+}
