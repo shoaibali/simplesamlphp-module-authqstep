@@ -1,3 +1,8 @@
+This module has been supersede by simplesamlphp-module-auth2factor module here
+
+https://github.com/shoaibali/simplesamlphp-module-auth2factor
+
+
 simplesamlphp-module-authqstep
 ==============================
 
